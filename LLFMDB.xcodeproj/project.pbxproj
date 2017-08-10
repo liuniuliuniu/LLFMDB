@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93ADDA6AFC440CE68A2CB77C /* libPods-LLFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB9ADB3B74ACD7DA7F8C02FE /* libPods-LLFMDB.a */; };
+		D27AA6281F3C559700ADC312 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA6271F3C559700ADC312 /* main.m */; };
+		D27AA62B1F3C559700ADC312 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA62A1F3C559700ADC312 /* AppDelegate.m */; };
+		D27AA62E1F3C559700ADC312 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA62D1F3C559700ADC312 /* ViewController.m */; };
+		D27AA6311F3C559700ADC312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27AA62F1F3C559700ADC312 /* Main.storyboard */; };
+		D27AA6331F3C559700ADC312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27AA6321F3C559700ADC312 /* Assets.xcassets */; };
+		D27AA6361F3C559700ADC312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D27AA6341F3C559700ADC312 /* LaunchScreen.storyboard */; };
+		D27AA6411F3C567300ADC312 /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA6401F3C567300ADC312 /* YTKKeyValueStore.m */; };
+		D27AA6441F3C56CE00ADC312 /* LLKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA6431F3C56CE00ADC312 /* LLKeyValueStore.m */; };
+		D27AA6471F3C68EE00ADC312 /* LLNSStringVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA6461F3C68EE00ADC312 /* LLNSStringVC.m */; };
+		D27AA64B1F3C6F5000ADC312 /* LLNSNumberVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D27AA64A1F3C6F5000ADC312 /* LLNSNumberVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29ECAF1465F94D83BEB85E04 /* Pods-LLFMDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLFMDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLFMDB/Pods-LLFMDB.release.xcconfig"; sourceTree = "<group>"; };
+		B2C5F7D95D2E4495477E1FD3 /* Pods-LLFMDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLFMDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLFMDB/Pods-LLFMDB.debug.xcconfig"; sourceTree = "<group>"; };
+		BB9ADB3B74ACD7DA7F8C02FE /* libPods-LLFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LLFMDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27AA6231F3C559700ADC312 /* LLFMDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLFMDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27AA6271F3C559700ADC312 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D27AA6291F3C559700ADC312 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D27AA62A1F3C559700ADC312 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D27AA62C1F3C559700ADC312 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D27AA62D1F3C559700ADC312 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D27AA6301F3C559700ADC312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D27AA6321F3C559700ADC312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D27AA6351F3C559700ADC312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D27AA6371F3C559700ADC312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D27AA63F1F3C567300ADC312 /* YTKKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKKeyValueStore.h; sourceTree = "<group>"; };
+		D27AA6401F3C567300ADC312 /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
+		D27AA6421F3C56CE00ADC312 /* LLKeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LLKeyValueStore.h; path = LLFMDB/LLFMDB/LLKeyValueStore.h; sourceTree = SOURCE_ROOT; };
+		D27AA6431F3C56CE00ADC312 /* LLKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LLKeyValueStore.m; path = LLFMDB/LLFMDB/LLKeyValueStore.m; sourceTree = SOURCE_ROOT; };
+		D27AA6451F3C68EE00ADC312 /* LLNSStringVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNSStringVC.h; sourceTree = "<group>"; };
+		D27AA6461F3C68EE00ADC312 /* LLNSStringVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNSStringVC.m; sourceTree = "<group>"; };
+		D27AA6481F3C6BEB00ADC312 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D27AA6491F3C6F5000ADC312 /* LLNSNumberVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLNSNumberVC.h; sourceTree = "<group>"; };
+		D27AA64A1F3C6F5000ADC312 /* LLNSNumberVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LLNSNumberVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D27AA6201F3C559700ADC312 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93ADDA6AFC440CE68A2CB77C /* libPods-LLFMDB.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C1273204519D3C118BB0FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB9ADB3B74ACD7DA7F8C02FE /* libPods-LLFMDB.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CFD2127CBE064D8FF011A88A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2C5F7D95D2E4495477E1FD3 /* Pods-LLFMDB.debug.xcconfig */,
+				29ECAF1465F94D83BEB85E04 /* Pods-LLFMDB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D27AA61A1F3C559700ADC312 = {
+			isa = PBXGroup;
+			children = (
+				D27AA6251F3C559700ADC312 /* LLFMDB */,
+				D27AA6241F3C559700ADC312 /* Products */,
+				CFD2127CBE064D8FF011A88A /* Pods */,
+				18C1273204519D3C118BB0FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D27AA6241F3C559700ADC312 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D27AA6231F3C559700ADC312 /* LLFMDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D27AA6251F3C559700ADC312 /* LLFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D27AA63D1F3C567300ADC312 /* LLFMDB */,
+				D27AA6291F3C559700ADC312 /* AppDelegate.h */,
+				D27AA62A1F3C559700ADC312 /* AppDelegate.m */,
+				D27AA62C1F3C559700ADC312 /* ViewController.h */,
+				D27AA62D1F3C559700ADC312 /* ViewController.m */,
+				D27AA6451F3C68EE00ADC312 /* LLNSStringVC.h */,
+				D27AA6461F3C68EE00ADC312 /* LLNSStringVC.m */,
+				D27AA6491F3C6F5000ADC312 /* LLNSNumberVC.h */,
+				D27AA64A1F3C6F5000ADC312 /* LLNSNumberVC.m */,
+				D27AA62F1F3C559700ADC312 /* Main.storyboard */,
+				D27AA6321F3C559700ADC312 /* Assets.xcassets */,
+				D27AA6341F3C559700ADC312 /* LaunchScreen.storyboard */,
+				D27AA6481F3C6BEB00ADC312 /* PrefixHeader.pch */,
+				D27AA6371F3C559700ADC312 /* Info.plist */,
+				D27AA6261F3C559700ADC312 /* Supporting Files */,
+			);
+			path = LLFMDB;
+			sourceTree = "<group>";
+		};
+		D27AA6261F3C559700ADC312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D27AA6271F3C559700ADC312 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D27AA63D1F3C567300ADC312 /* LLFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				D27AA63E1F3C567300ADC312 /* YTKKeyValueStore */,
+				D27AA6421F3C56CE00ADC312 /* LLKeyValueStore.h */,
+				D27AA6431F3C56CE00ADC312 /* LLKeyValueStore.m */,
+			);
+			path = LLFMDB;
+			sourceTree = "<group>";
+		};
+		D27AA63E1F3C567300ADC312 /* YTKKeyValueStore */ = {
+			isa = PBXGroup;
+			children = (
+				D27AA63F1F3C567300ADC312 /* YTKKeyValueStore.h */,
+				D27AA6401F3C567300ADC312 /* YTKKeyValueStore.m */,
+			);
+			path = YTKKeyValueStore;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D27AA6221F3C559700ADC312 /* LLFMDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D27AA63A1F3C559700ADC312 /* Build configuration list for PBXNativeTarget "LLFMDB" */;
+			buildPhases = (
+				77E0B32BD3E5E2E39734B100 /* [CP] Check Pods Manifest.lock */,
+				D27AA61F1F3C559700ADC312 /* Sources */,
+				D27AA6201F3C559700ADC312 /* Frameworks */,
+				D27AA6211F3C559700ADC312 /* Resources */,
+				1FA09282A80FDB5F4D59D332 /* [CP] Embed Pods Frameworks */,
+				CBFEF53DFC2F78FE8225B6CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LLFMDB;
+			productName = LLFMDB;
+			productReference = D27AA6231F3C559700ADC312 /* LLFMDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D27AA61B1F3C559700ADC312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = liushaohua;
+				TargetAttributes = {
+					D27AA6221F3C559700ADC312 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D27AA61E1F3C559700ADC312 /* Build configuration list for PBXProject "LLFMDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D27AA61A1F3C559700ADC312;
+			productRefGroup = D27AA6241F3C559700ADC312 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D27AA6221F3C559700ADC312 /* LLFMDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D27AA6211F3C559700ADC312 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27AA6361F3C559700ADC312 /* LaunchScreen.storyboard in Resources */,
+				D27AA6331F3C559700ADC312 /* Assets.xcassets in Resources */,
+				D27AA6311F3C559700ADC312 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA09282A80FDB5F4D59D332 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLFMDB/Pods-LLFMDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77E0B32BD3E5E2E39734B100 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CBFEF53DFC2F78FE8225B6CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLFMDB/Pods-LLFMDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D27AA61F1F3C559700ADC312 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D27AA6411F3C567300ADC312 /* YTKKeyValueStore.m in Sources */,
+				D27AA62E1F3C559700ADC312 /* ViewController.m in Sources */,
+				D27AA64B1F3C6F5000ADC312 /* LLNSNumberVC.m in Sources */,
+				D27AA6471F3C68EE00ADC312 /* LLNSStringVC.m in Sources */,
+				D27AA6441F3C56CE00ADC312 /* LLKeyValueStore.m in Sources */,
+				D27AA62B1F3C559700ADC312 /* AppDelegate.m in Sources */,
+				D27AA6281F3C559700ADC312 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D27AA62F1F3C559700ADC312 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27AA6301F3C559700ADC312 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D27AA6341F3C559700ADC312 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D27AA6351F3C559700ADC312 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D27AA6381F3C559700ADC312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D27AA6391F3C559700ADC312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D27AA63B1F3C559700ADC312 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2C5F7D95D2E4495477E1FD3 /* Pods-LLFMDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/dayingxiangkeji/Desktop/LLFMDB/LLFMDB/PrefixHeader.pch;
+				INFOPLIST_FILE = LLFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D27AA63C1F3C559700ADC312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29ECAF1465F94D83BEB85E04 /* Pods-LLFMDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/dayingxiangkeji/Desktop/LLFMDB/LLFMDB/PrefixHeader.pch;
+				INFOPLIST_FILE = LLFMDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = liushaohua.LLFMDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D27AA61E1F3C559700ADC312 /* Build configuration list for PBXProject "LLFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27AA6381F3C559700ADC312 /* Debug */,
+				D27AA6391F3C559700ADC312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D27AA63A1F3C559700ADC312 /* Build configuration list for PBXNativeTarget "LLFMDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D27AA63B1F3C559700ADC312 /* Debug */,
+				D27AA63C1F3C559700ADC312 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D27AA61B1F3C559700ADC312 /* Project object */;
+}
