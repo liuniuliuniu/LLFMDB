@@ -1,6 +1,8 @@
 # LLFMDB
 高度二次封装FMDB 一键调用缓存 傻瓜式操作 让您再也不用因为缓存而烦恼
 
+![LLFMDB.Gif](https://github.com/liuniuliuniu/LLFMDB/blob/master/LLFMDB.gif)
+
 ## 导航
 
 * [实现功能](#function)
