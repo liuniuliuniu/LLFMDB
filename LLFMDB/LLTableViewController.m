@@ -49,7 +49,6 @@
         [self.tableView reloadData];
     }
     
-    
 }
 
 
@@ -62,9 +61,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CELLID" forIndexPath:indexPath];
-    
     cell.textLabel.text = self.dataArr[indexPath.row];
-
     return cell;
 }
 

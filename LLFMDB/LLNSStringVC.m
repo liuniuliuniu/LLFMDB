@@ -43,7 +43,7 @@
     
     if (self.nameTextFiled.text.length <= 0)  return;
     
-    // 保存值  指定id 
+    // 2  保存值  指定id 
     [[LLKeyValueStore shareStore] putString:self.nameTextFiled.text withId:LLNSStringVCID intoTable:LLNSStringVCTabName];
     [self.view showToastWithText:@"缓存成功"];
     
