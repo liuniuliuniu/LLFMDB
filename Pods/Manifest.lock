@@ -2,13 +2,19 @@ PODS:
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
+  - MBProgressHUD (0.9.2)
+  - Toast (3.1.0)
 
 DEPENDENCIES:
-  - FMDB
+  - FMDB (~> 2.7.2)
+  - MBProgressHUD (~> 0.9.1)
+  - Toast (~> 3.0)
 
 SPEC CHECKSUMS:
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
 
-PODFILE CHECKSUM: fa748c68483f02ac9b0f20902ec9e6521902011a
+PODFILE CHECKSUM: 19d75855b728b5a6823d55d2605fc1b54d6d428d
 
 COCOAPODS: 1.2.1

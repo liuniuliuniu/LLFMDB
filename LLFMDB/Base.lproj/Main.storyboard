@@ -44,6 +44,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.38771896169999998" green="1" blue="0.016070829719999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="存取id对象"/>
+                                <connections>
+                                    <segue destination="uyw-9K-Qrg" kind="show" id="kQl-3h-MRp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKw-YZ-8uD">
                                 <rect key="frame" x="92" y="298" width="190" height="30"/>
@@ -96,7 +99,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVY-JM-ke2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="210.94452773613196"/>
+            <point key="canvasLocation" x="1550" y="7"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="47b-AQ-GrN">
+            <objects>
+                <tableViewController id="uyw-9K-Qrg" customClass="LLTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hjz-z1-Tfe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CELLID" id="dLy-vu-4hg">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dLy-vu-4hg" id="OLP-39-kpi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uyw-9K-Qrg" id="bLy-Ed-Gwf"/>
+                            <outlet property="delegate" destination="uyw-9K-Qrg" id="2iq-ex-8xD"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4N-CP-kBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="671"/>
         </scene>
         <!--StringVC-->
         <scene sceneID="gct-Ct-lBe">
@@ -125,6 +156,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALm-xR-TeK">
+                                <rect key="frame" x="139" y="299" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="删除缓存"/>
+                                <connections>
+                                    <action selector="deleteStr:" destination="SLj-me-fqK" eventType="touchUpInside" id="WMO-X4-jBT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -134,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwv-oZ-FJJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="-453"/>
+            <point key="canvasLocation" x="1550" y="-620"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TcN-JC-XdN">

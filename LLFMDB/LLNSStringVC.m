@@ -30,17 +30,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 有数据就直接赋值
-    self.nameTextFiled.text = [[LLKeyValueStore shareStore]getStringById:LLNSStringVCID fromTable:LLNSStringVCTabName];
+    NSString *str = [[LLKeyValueStore shareStore]getStringById:LLNSStringVCID fromTable:LLNSStringVCTabName];
     
+    if (str.length > 0) {
+        self.nameTextFiled.text = str;
+        [self.view showToastWithText:@"从数据库中取出的数据"];
+    }
 }
+
 
 - (IBAction)saveStr:(UIButton *)sender {
     
-    if (self.nameTextFiled.text.length <= 0) return;
+    if (self.nameTextFiled.text.length <= 0)  return;
     
-    // 保存值  指定id
+    // 保存值  指定id 
     [[LLKeyValueStore shareStore] putString:self.nameTextFiled.text withId:LLNSStringVCID intoTable:LLNSStringVCTabName];
+    [self.view showToastWithText:@"缓存成功"];
+    
+}
+- (IBAction)deleteStr:(UIButton *)sender {
+    
+    [[LLKeyValueStore shareStore] deleteObjectById:LLNSStringVCID fromTable:LLNSStringVCTabName];
+    [self.view showToastWithText:@"删除缓存成功"];
+    
     
 }
 

@@ -8,5 +8,9 @@ target 'LLFMDB' do
 
 pod 'FMDB' ,'~> 2.7.2'
 
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'Toast', '~> 3.0'
+
+
 end
 

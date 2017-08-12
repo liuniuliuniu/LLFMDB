@@ -10,5 +10,6 @@
 #define PrefixHeader_pch
 
 #import "LLKeyValueStore.h"
+#import "UIView+Alert.h"
 
 #endif /* PrefixHeader_pch */

@@ -22,7 +22,6 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    
     [[LLKeyValueStore shareStore] createDBWithTableName:LLNSNumberVCTabName];
 }
 
@@ -33,12 +32,16 @@
     
     if (number != nil) {
         self.numberTextFiled.text = [number stringValue];
-    }    
+        [self.view showToastWithText:@"从数据库中取出的数据"];
+    }
 }
 
 - (IBAction)saveInfo:(id)sender {
     
+    if (self.numberTextFiled.text.length <= 0) return;
+    
     [[LLKeyValueStore shareStore]putNumber:[NSNumber numberWithDouble:[self.numberTextFiled.text doubleValue]] withId:LLNSNumberVCID intoTable:LLNSNumberVCTabName];
+    [self.view showToastWithText:@"缓存成功"];
 }
 
 
