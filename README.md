@@ -43,9 +43,9 @@
 [[LLKeyValueStore shareStore]deleteObjectById:LLTableViewControllerTabID fromTable:LLTableViewControllerTabName];
  
 ```
-
+> 此处如果往数据库存数组 不要存模型数组 可以存网络请求回来的数据数组  然后使用的时候从数据库取出数组在进行json转模型数组使用
+> 
 >更多其他使用方法 详见demo
-
 
 
 
